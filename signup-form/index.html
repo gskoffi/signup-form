@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup Form</title>
+    <link rel="stylesheet " href="style.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="left-column">
+            <div class="logo-wrapper">
+                <img class="logo" src="ocean.logo.jpg" alt="Image of ocean">
+                <div class="logo-text">Ocean</div>
+            </div>
+            <div class="author-photo-credits">
+                <img src="joanna-lopez-rwl6p0ZNUag-unsplash.jpg" id="background-photo">
+                photo by <a href="https://unsplash.com/@hellojoannarae">Joanna Lopez</a>
+                on <a href="joanna-lopez-rwl6p0ZNUag-unsplash.jpg">unsplash</a>
+                
+            </div>
+        </div>
+        <div class="right-column">
+            <div class="right-column-row-1"></div>
+            <div class="form-wrapper">
+                <h3>Create your account</h3>
+                <form id="sign-up-form">
+                    <div class="form-row-1">
+                        <div class="first-name">
+                            <label for="first-name">First Name</label> <br/>
+                            <input id="first-name" type="text" required/>
+                        </div>
+
+                        <div class="last-name">
+                            <label for="last-name">Last Name</label> <br/>
+                            <input id="last-name" type="text" required/>
+                        </div>
+                    </div>
+                    <div class="form-row-2">
+                        <div class="email">
+                            <label for="email">Email</label> <br/>
+                            <input id="email" type="email" required/>
+                        </div>
+                        <div class="phone-number">
+                            <label for="phone-number">Phone Number</label> <br/>
+                            <input type="tel" id="phone-number"/>
+                        </div>
+                    </div>
+                    <div class="form-row-3">
+                        <div class="password">
+                            <label for="password">Password</label> <br/>
+                            <input type="password" id="password" required minlength="7" />
+                            <span id="pw-help-text">*Password do not match</span>
+
+                        </div>
+                        <div class="confirm-password">
+                            <label for="confirm-password">Confirm Password</label> <br/>
+                            <input type="password" id="confirm-password" required />
+                        
+                        </div>
+                    </div>
+                    
+                </form>
+            </div>
+            <div class="submit-wrapper">
+                <button type="submit" form="sign-up-form" value="Submit">Create Account</button>
+                <div class="log-in-text">Already have an account? <a href="">Log in</a></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
